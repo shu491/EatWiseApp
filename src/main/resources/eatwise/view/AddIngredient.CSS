@@ -1,0 +1,62 @@
+/* EastWise Add Ingredient Page Style */
+
+/* Page Background */
+.root {
+    -fx-background-image: url("/images/background.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+/* Form Labels */
+.label {
+    -fx-font-size: 14px;
+    -fx-font-family: "Comic Sans MS", "Comic Sans", cursive;
+    -fx-text-fill: #3B060A;
+    -fx-font-weight: bold;
+}
+
+/* Input Fields */
+.text-field, .combo-box {
+    -fx-background-color: #FEFAE0;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-color: #BCA88D;
+    -fx-border-width: 2px;
+    -fx-padding: 6 10 6 10;
+    -fx-font-size: 12px;
+    -fx-font-family: "Comic Sans MS", "Cochin", cursive;
+    -fx-text-fill: #3B060A;
+    
+}
+
+/* Input Fields for focus state */
+.text-field:focused, .combo-box:focused {
+    -fx-border-color: #BF9264;
+    -fx-effect: dropshadow(gaussian, rgba(93,92,97,0.15), 4, 0, 0, 2);
+}
+
+/* Buttons */
+.button {
+    -fx-background-radius: 20px;
+    -fx-background-color: #BCA88D;
+    -fx-text-fill: #3B060A;
+    -fx-font-size: 14px;
+    -fx-font-family: "Didot", "Cochin", cursive;
+    -fx-font-weight: bold;
+    -fx-padding: 6 16 6 16;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(93,92,97,0.15), 4, 0, 0, 2);
+}
+
+.button:hover {
+    -fx-background-color: #FEFAE0;
+}
+
+/* Special Labels for Status & Photo (Alert) */
+#statusLabel, #photoLabel {
+    -fx-font-size: 12px;
+    -fx-font-family: "Comic Sans MS", "Comic Sans", cursive;
+    -fx-text-fill: #C4452F;
+    -fx-font-weight: bold;
+}

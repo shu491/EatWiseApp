@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" styleClass="anchor-pane" stylesheets="@EatWiseApp.CSS" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eatwise.view.MenuPageController">
+   <children>
+      <Label layoutX="155.0" layoutY="104.0" prefHeight="58.0" prefWidth="357.0" styleClass="app-title" text="Eat Wise Menu Page" AnchorPane.leftAnchor="155.0" AnchorPane.rightAnchor="88.0" />
+      <Button layoutX="172.0" layoutY="217.0" mnemonicParsing="false" onAction="#handleOpenBudgetBasedPlanner" text="Budget-Based Planner" AnchorPane.leftAnchor="172.0" AnchorPane.rightAnchor="172.5" />
+      <Button layoutX="215.0" layoutY="274.0" mnemonicParsing="false" onAction="#handleOpenBudgetStatusTracker" prefHeight="41.0" prefWidth="256.0" text="Budget Status Tracker" AnchorPane.leftAnchor="172.0" />
+      <Button layoutX="217.0" layoutY="330.0" mnemonicParsing="false" onAction="#handleOpenNutritionChecker" prefHeight="41.0" prefWidth="256.0" text="Nutrition Checker" AnchorPane.leftAnchor="172.0" />
+      <Circle fx:id="profileCircle" layoutX="543.0" layoutY="52.0" onMouseClicked="#handleProfileClicked" radius="31.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Label layoutX="172.0" layoutY="173.0" styleClass="app-text" text="Please choose your action: " />
+
+   </children>
+</AnchorPane>

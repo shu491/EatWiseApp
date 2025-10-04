@@ -1,0 +1,18 @@
+Food,Measure,Grams,Calories,Protein,Fat,Sat.Fat,Fiber,Carbs,Category,PricePer100g
+Cows' milk,1 qt.,976,660,32,40,36,0,48,Dairy products,0.45
+Butter,1T.,14,100,0.1,11,10,0,0,"Fats, Oils, Shortenings",0.5
+chicken,3 oz.,85,185,23,9,7,0,0,"Meat, Poultry",0.4
+Salmon,3 oz.,85,120,17,5,1,0,0,"Fish, Seafood",3.5
+Shrimp,3 oz.,85,110,23,1,0,0,0,"Fish, Seafood",2
+Broccoli,1 cup,150,45,5,1,0,1.9,8,Vegetables ,0.8
+Carrots,1 cup,150,45,1,0,0,0.9,10,Vegetables ,0.3
+Banana,1 med.,150,85,1,1,0,0.9,23,Fruits ,0.2
+Rice,1 cup,208,748,15,3,0,1.2,154,"Breads, cereals, fastfood,grains",0.2
+Cream soups,1 cup,255,200,7,12,11,1.2,18,Soups,0.5
+Tomato soup,1 cup,245,175,6,7,6,0.5,22,Soups,0.4
+Cupcake,1,50,160,3,3,2,4.3,31,"Desserts, sweets",0.3
+Honey,2 T.,42,120,1,0,0,0,30,"Jams, Jellies",1.5
+Ice cream,2 cups,300,250,0,0,12,10,0,"Desserts, sweets",0.6
+Almonds,1/2 cup,70,425,13,38,28,1.8,13,Seeds and Nuts,2
+Coffee,1 cup,230,3,0.3,0,0,0,1,"Drinks,Alcohol, Beverages",0.5
+Tea,1 cup,230,4,0,0,0,0,1,"Drinks,Alcohol, Beverages",0.1

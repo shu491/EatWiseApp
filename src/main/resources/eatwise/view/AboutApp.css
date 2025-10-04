@@ -1,0 +1,48 @@
+/* EastWise About App Page Style */
+
+/* About App Background*/
+.aboutApp {
+    -fx-background-color: #FEFBF1;
+}
+
+/* page title text */
+.title {
+    -fx-font-size: 22px;
+    -fx-font-family: "Cochin", "Comic Sans MS", cursive;
+    -fx-text-fill: #644A07;
+    -fx-font-weight: bold;
+}
+
+/* General description text */
+.description-text {
+    -fx-font-size: 14px;
+    -fx-font-family: "Apple Chancery", "Comic Sans", "Cochin";
+    -fx-text-fill: #644A07;
+}
+
+/* Text for icon attribute */
+.icon-text{
+    -fx-font-size: 10px;
+    -fx-font-family: "Apple Chancery", "Comic Sans", "Cochin";
+    -fx-text-fill: #644A07;
+}
+
+/* Style for the close button */
+.button {
+    -fx-background-radius: 25px;           /* Rounded edges */
+    -fx-background-color: #BCA88D;
+    -fx-text-fill: #3B060A;
+    -fx-font-size: 11px;
+    -fx-font-family: "Didot", "Comic Sans MS", cursive;
+    -fx-font-weight: bold;
+    -fx-padding: 8 8 8 8;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;   /* Pointer cursor on hover */
+    -fx-effect: dropshadow(gaussian, rgba(93,92,97,0.2), 5,0,0,2);  /* Subtle shadow */
+    -fx-transition: all 0.3s ease;  /* Smooth hover animations */
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    -fx-background-color: #FEFAE0;
+}

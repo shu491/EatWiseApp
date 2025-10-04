@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #f9f9f9;" styleClass="anchor-pane" stylesheets="@EatWiseApp.CSS" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eatwise.view.RegisterController">
+   <Label layoutX="172.0" layoutY="99.0" styleClass="app-title" stylesheets="@EatWiseApp.CSS" text="Register New User" />
+
+    <TextField fx:id="usernameField" layoutX="200.0" layoutY="198.0" prefWidth="200" promptText="New Username" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="198.0" />
+
+    <PasswordField fx:id="passwordField" layoutX="200.0" layoutY="259.0" prefWidth="200" promptText="New Password" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="259.0" />
+   <Label fx:id="errorLabel" layoutX="203.0" layoutY="312.0" styleClass="errorLabel" />
+   <ButtonBar layoutX="171.0" layoutY="378.0">
+     <buttons>
+      
+          <Button defaultButton="true" onAction="#handleRegister" text="Register" />
+         <Button cancelButton="true" onAction="#handleBack" text="Back" />
+     </buttons>
+   </ButtonBar>
+
+</AnchorPane>

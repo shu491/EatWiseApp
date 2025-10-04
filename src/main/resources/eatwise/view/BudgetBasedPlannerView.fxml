@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" maxHeight="700.0" minHeight="500.0" prefWidth="600" spacing="20" styleClass="anchor-pane" stylesheets="@EatWiseApp.CSS" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eatwise.view.BudgetBasedPlannerController">
+
+    <Label styleClass="app-text" text="Select Ingredient/ Meal Based On Budget">
+        <padding>
+            <Insets top="10.0" />
+        </padding>
+    </Label>
+
+    <!-- Budget Input -->
+    <HBox alignment="CENTER" spacing="10">
+        <Label styleClass="app-text" text="Enter Budget" />
+        <Label styleClass="app-text" text="RM" />
+        <TextField fx:id="budgetField" promptText="e.g. 20.00" />
+        <Button defaultButton="true" onAction="#handleGenerate" text="Generate" />
+    </HBox>
+   <Label styleClass="app-text" text="Ingredient/ Meal:" />
+
+    <!-- Meals Grid inside ScrollPane -->
+    <ScrollPane fitToWidth="true" maxHeight="150.0" minHeight="120.0" prefHeight="120.0" prefWidth="600.0">
+        <content>
+            <TilePane fx:id="mealsPane" alignment="CENTER" hgap="15" prefColumns="3" style="-fx-padding: 10;" vgap="15" />
+        </content>
+    </ScrollPane>
+
+    <!-- Selected Meal Info -->
+    <Label styleClass="app-text" text="Select to see details:" />
+    <HBox alignment="CENTER" spacing="10">
+        <Label fx:id="selectedMealNameLabel" styleClass="app-text" />
+        <Label styleClass="app-text" text="Price (RM):" />
+        <TextField fx:id="manualPriceField" promptText="Enter to edit price" />
+    </HBox>
+
+    <!-- Nutrition Info -->
+    <HBox alignment="CENTER" spacing="30">
+        <VBox alignment="CENTER">
+            <Label styleClass="app-text" text="Calories" />
+            <Label fx:id="caloriesLabel" styleClass="label-text" />
+        </VBox>
+        <VBox alignment="CENTER">
+            <Label styleClass="app-text" text="Protein" />
+            <Label fx:id="proteinLabel" styleClass="label-text" />
+        </VBox>
+        <VBox alignment="CENTER">
+            <Label styleClass="app-text" text="Fat" />
+            <Label fx:id="fatLabel" styleClass="label-text" />
+        </VBox>
+        <VBox alignment="CENTER" styleClass="app-text">
+            <Label styleClass="app-text" text="Saturated Fat" />
+            <Label fx:id="satFatLabel" styleClass="label-text" />
+        </VBox>
+        <VBox alignment="CENTER">
+            <Label styleClass="app-text" text="Fiber" />
+            <Label fx:id="fiberLabel" styleClass="label-text" />
+        </VBox>
+        <VBox alignment="CENTER">
+            <Label styleClass="app-text" text="Carbs" />
+            <Label fx:id="carbsLabel" styleClass="label-text" />
+        </VBox>
+    </HBox>
+
+    <!-- Buttons -->
+    <HBox alignment="CENTER" spacing="20">
+        <Button onAction="#handleConfirm" text="Confirm" />
+        <Button cancelButton="true" onAction="#handleBack" text="Back" />
+    </HBox>
+
+    <!-- Alert Label -->
+    <Label fx:id="alertLabel" styleClass="alertLabel">
+      <VBox.margin>
+         <Insets bottom="10.0" />
+      </VBox.margin></Label>
+</VBox>

@@ -1,0 +1,96 @@
+/* EatWise Page Style*/
+
+/* Set background image for the entire AnchorPane */
+.anchor-pane {
+    -fx-background-image: url("/images/background.png"); /* Put your background image here! */
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+.borderpane {
+    -fx-background-color: #FEFBF1;
+}
+
+.cubic-curve {
+    -fx-stroke: #BF9264;
+    -fx-stroke-width: 4;
+}
+
+/* Title and Headings */
+.app-title {
+    -fx-font-size: 35px;
+    -fx-font-family: "Bodoni 72 Smallcaps", "Canela Text", "Comic Sans MS"; /* Playful font */
+    -fx-text-fill: #644A07;
+    -fx-font-weight: bold;
+}
+
+/* General Body Text */
+.app-text {
+    -fx-font-size: 14px;
+    -fx-font-family: "Lao MN", "Comic Sans", "Cochin";
+    -fx-text-fill: #644A07;
+}
+
+/* Form and label text */
+.label-text{
+    -fx-font-size: 14px;
+    -fx-font-family: "Comic Sans MS", "Snell Roundhand", cursive;
+    -fx-text-fill: #555;
+}
+
+/* Rounded panels */
+.rectangle {
+    -fx-fill: #BCA88D;
+    -fx-stroke: transparent;
+    -fx-arc-width: 40;
+    -fx-arc-height: 40;
+    /*-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 4); */
+}
+
+/* Style the buttons in the ButtonBar */
+.button {
+    -fx-background-radius: 25px;
+    -fx-background-color: #BCA88D;
+    -fx-text-fill: #3B060A;
+    -fx-font-size: 16px;
+    -fx-font-family: "Didot", "Comic Sans MS", cursive;
+    -fx-font-weight: bold;
+    -fx-padding: 8 20 8 20;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(93,92,97,0.2), 5,0,0,2);
+    -fx-transition: all 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    -fx-background-color: #FEFAE0;  /* Slightly lighter when hover */
+}
+
+/* Input fields for text and password */
+.text-field, .password-field {
+    -fx-background-color: #FEFAE0;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-border-color: #BCA88D;
+    -fx-border-width: 2px;
+    -fx-padding: 8 12 8 12;
+    -fx-font-size: 14px;
+    -fx-font-family: "Comic Sans MS", "Cochin", cursive;
+    -fx-text-fill: #3B060A;
+}
+
+/* Input focus state */
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #BF9264;       /* Slightly darker on focus */
+    -fx-effect: dropshadow(gaussian, rgba(93,92,97,0.15), 4, 0, 0, 2);
+}
+
+/* Error/ Alert/ Status Labels */
+.errorLabel, .alertLabel, .statusLabel {
+    -fx-text-fill: #C4452F;          /* Soft macaron strawberry red */
+    -fx-font-size: 12px;
+    -fx-font-family: "Comic Sans MS", "Comic Sans", cursive;
+    -fx-font-weight: bold;
+}
+
